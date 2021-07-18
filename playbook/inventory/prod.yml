@@ -1,0 +1,13 @@
+---
+elasticsearch:
+  hosts:
+    elkib:
+      ansible_connection: ssh
+      ansible_user: root
+      ansible_host: 192.168.100.31
+kibana:
+  hosts:
+    elkib:
+      ansible_connection: ssh
+      ansible_user: root
+      ansible_host: 192.168.100.31
