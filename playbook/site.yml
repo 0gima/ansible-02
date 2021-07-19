@@ -76,7 +76,7 @@
   tasks:
     - name: Upload tar.gz Kibana from remote URL
       get_url:
-        url: "https://artifacts.elastic.co/downloads/kibana/kibana-{{ kibana_version }}-linux-x86_64.tar.gz"      
+        url: "https://artifacts.elastic.co/downloads/kibana/kibana-{{ kibana_version }}-linux-x86_64.tar.gz"
         dest: "/tmp/kibana-{{ kibana_version }}-linux-x86_64.tar.gz"
         mode: 0755
         timeout: 60
@@ -102,7 +102,7 @@
         - kibana
     - name: Set environment Kibana
       become: true
-      template: 
+      template:
         src: kbn.sh.j2
         dest: /etc/profile.d/kbn.sh
       tags: kibana
